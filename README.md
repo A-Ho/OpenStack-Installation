@@ -314,6 +314,10 @@ iface eth2 inet dhcp
 
 <pre>glance image-create --name 'CirrOS 0.3.2 x86_64' --is-public=true --container-format=bare --disk-format=qcow2 --location http://download.cirros-cloud.net/0.3.2/cirros-0.3.2-x86_64-disk.img</pre>
 
+- Load the CirrOS image from local dir
+
+<pre>glance image-create --name 'CirrOS 0.3.2 x86_64' --is-public=true --container-format=bare --disk-format=qcow2 > ${dir_path}/cirros-0.3.2-x86_64-disk.img</pre>
+
 - Load Ubuntu 12.04 Image
 
 <pre>glance image-create --name 'Ubuntu 12.04 x86_64' --is-public=true --container-format=bare --disk-format=qcow2 --location http://uec-images.ubuntu.com/precise/current/precise-server-cloudimg-amd64-disk1.img</pre>
